@@ -21,7 +21,7 @@ composer require rlimjr/lara-clean
 LaraClean provides the following console commands:
 
 * `make:domain`: Create a new domain model
-* `make:dto`: Create a new DTO (Data Transfer Object)
+* `make:domain-dto`: Create a new DTO (Data Transfer Object)
 * `make:domain-migration`: Create a new migration for a domain model
 
 ### Command Options
@@ -34,15 +34,15 @@ LaraClean provides the following console commands:
 
 * Create a new domain model:
 ```bash
-php artisan make:domain --domain=Users --name=User
+php artisan make:domain Question
 ```
 * Create a new DTO:
 ```bash
-php artisan make:dto --domain=Users --name=UserDTO
+php artisan make:dto Question Question
 ```
 * Create a new migration for a domain model:
 ```bash
-php artisan make:domain-migration --domain=Users --name=UserMigration
+php artisan make:domain-migration Question Choices<optional>
 ```
 ### Directory Structure
 
