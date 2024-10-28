@@ -50,7 +50,13 @@ class MakeDomainModel extends Command
     protected function getStub($domain, $model)
     {
         // Get the content of the stub file
-        $stubPath = resource_path('stubs/model.stub');
+        $stubPath = __DIR__ . '/../../stubs/model.stub'; // Adjust path based on stub location
+
+        // Check if the stub file exists
+        if (!File::exists($stubPath)) {
+            throw new \Exception("Stub file not found: {$stubPath}");
+        }
+
         $stub = File::get($stubPath);
 
         // Replace placeholders with actual values
