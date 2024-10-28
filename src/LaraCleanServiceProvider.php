@@ -38,7 +38,7 @@ class LaraCleanServiceProvider extends ServiceProvider
             \Rlimjr\LaraClean\Console\Commands\MakeDomain::class,
             \Rlimjr\LaraClean\Console\Commands\MakeDomainMigration::class,
             \Rlimjr\LaraClean\Console\Commands\MakeDomainModel::class,
-            \Rlimjr\LaraClean\Console\Commands\MakeDto::class
+            \Rlimjr\LaraClean\Console\Commands\MakeDomainDto::class
         ]);
     }
 
