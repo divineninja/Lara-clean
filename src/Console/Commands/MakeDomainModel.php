@@ -1,6 +1,6 @@
 <?php
 
-namespace Rlimjr\laraClean\Console\Commands;
+namespace Rlimjr\LaraClean\Console\Commands;
 
 use Illuminate\Support\Str;
 use Illuminate\Console\Command;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Rlimjr\laraClean;
+namespace Rlimjr\LaraClean;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\File;
 
-class DomainServiceProvider extends ServiceProvider
+class LaraCleanServiceProvider extends ServiceProvider
 {
 
     /**
@@ -33,6 +33,13 @@ class DomainServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->loadDomainMigrations();
+
+        $this->commands([
+            \Rlimjr\LaraClean\Console\Commands\MakeDomain::class,
+            \Rlimjr\LaraClean\Console\Commands\MakeDomainMigration::class,
+            \Rlimjr\LaraClean\Console\Commands\MakeDomainModel::class,
+            \Rlimjr\LaraClean\Console\Commands\MakeDto::class
+        ]);
     }
 
     /**
