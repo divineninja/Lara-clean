@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Domain\{{domain}}\DTOs;
+
+class {{model}}DTO
+{
+    // Add your DTO properties and methods here
+    public function __construct(){}
+
+    public static function fromArray(array $data): self
+    {
+        return new static();
+    }
+
+    public function toArray(): array
+    {
+        return [];
+    }
+}

@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Domain\{{domain}}\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class {{model}} extends Model
+{
+    /**
+    * Create a new class instance.
+    */
+    public function __construct()
+    {
+        //
+    }
+}
