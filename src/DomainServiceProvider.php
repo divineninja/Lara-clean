@@ -1,6 +1,6 @@
 <?php
 
-namespace rlimjr\laraClean;
+namespace Rlimjr\laraClean;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\File;

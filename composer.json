@@ -8,12 +8,12 @@
     },
     "autoload": {
         "psr-4": {
-            "rlimjr\\laraClean\\": "src/"
+            "Rlimjr\\LaraClean\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "rlimjr\\laraClean\\Tests\\": "tests/"
+            "Rlimjr\\LaraClean\\Tests\\": "tests/"
         }
     }
 }
